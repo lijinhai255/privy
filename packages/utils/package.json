@@ -1,0 +1,16 @@
+{
+  "name": "@privy/utils",
+  "version": "1.0.0",
+  "description": "Utility functions for Privy",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["utils", "helpers"],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.24.0"
+}

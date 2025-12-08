@@ -1,0 +1,28 @@
+{
+  "name": "privy-monorepo",
+  "version": "1.0.0",
+  "description": "Privy monorepo project",
+  "private": true,
+  "scripts": {
+    "build": "pnpm -r build",
+    "build:packages": "pnpm -r --filter './packages/*' build",
+    "build:web": "pnpm --filter @privy/web build",
+    "dev": "pnpm -r --parallel dev",
+    "dev:web": "pnpm --filter @privy/web dev",
+    "preview": "pnpm --filter @privy/web preview",
+    "lint": "pnpm -r lint",
+    "type-check": "pnpm -r type-check",
+    "test": "pnpm -r test",
+    "clean": "pnpm -r clean && rm -rf node_modules",
+    "install:deps": "pnpm install"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "typescript": "^5.3.0"
+  },
+  "packageManager": "pnpm@10.24.0",
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  }
+}
